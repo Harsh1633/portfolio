@@ -35,6 +35,7 @@
     --input: 120 50% 20%;
     --ring: 120 100% 50%;
 
+    
     --radius: 0.5rem;
 
     /* Matrix custom tokens */
@@ -43,6 +44,7 @@
     --matrix-dark: 120 10% 4%;
     --matrix-darker: 120 15% 2%;
     --matrix-gold: 45 100% 65%;
+    --matrix-red-blue: var(--matrix-red);
     
     /* Gradients */
     --gradient-matrix: linear-gradient(135deg, hsl(120 100% 25%) 0%, hsl(120 100% 50%) 50%, hsl(120 80% 40%) 100%);
@@ -50,9 +52,9 @@
     --gradient-glow: radial-gradient(ellipse at center, hsl(120 100% 50% / 0.15) 0%, transparent 70%);
     
     /* Shadows */
-    --shadow-glow: 0 0 30px hsl(120 100% 50% / 0.4);
-    --shadow-glow-strong: 0 0 60px hsl(120 100% 50% / 0.6);
-    --shadow-card: 0 8px 32px hsl(120 100% 50% / 0.1);
+    --shadow-glow: 0 0 30px hsl(120 80% 50% / 0.4);
+    --shadow-glow-strong: 0 0 60px hsl(120 80% 50% / 0.6);
+    --shadow-card: 0 8px 32px hsl(120 80% 50% / 0.1);
 
     --sidebar-background: 120 10% 6%;
     --sidebar-foreground: 120 100% 65%;
@@ -95,6 +97,7 @@
   }
 }
 
+
 @layer base {
   * {
     @apply border-border;
@@ -115,7 +118,7 @@
     text-shadow: 
       0 0 10px hsl(var(--matrix-green)),
       0 0 20px hsl(var(--matrix-green)),
-      0 0 40px hsl(var(--matrix-green) / 0.5);
+      0 0 60px hsl(var(--matrix-green) / 0.5);
   }
 
   .matrix-box-glow {
@@ -126,6 +129,20 @@
     box-shadow: var(--shadow-glow-strong);
   }
 }
+
+@layer utilities {
+  /* Random Matrix-style red/blue glow on hover */
+ .matrix-hover-glow:hover {
+  color: hsl(var(--matrix-red-blue) / 1);
+  text-shadow:
+    0 0 5px hsl(var(--matrix-red-blue) / 0.8),
+    0 0 10px hsl(var(--matrix-red-blue) / 0.6),
+    0 0 20px hsl(var(--matrix-red-blue) / 0.4);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+}
+
 
 @layer utilities {
   .animate-matrix-pulse {

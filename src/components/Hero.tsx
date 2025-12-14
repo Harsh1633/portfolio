@@ -63,25 +63,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Skills tags */}
-            <div 
-              className="flex flex-wrap justify-center lg:justify-start gap-3 animate-fade-in"
-              style={{ animationDelay: '0.4s' }}
-            >
-              {[
-                { icon: Smartphone, label: 'Mobile Developer' },
-                { icon: Code2, label: 'Flutter' },
-                { icon: Terminal, label: 'React' },
-                { icon: Code2, label: 'Python (FastAPI)' },
-              ].map((skill, index) => (
-                <div
-                  key={skill.label}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 hover:bg-secondary/50 transition-all duration-300 group"
-                >
-                  <skill.icon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                  <span className="text-sm font-mono text-foreground">{skill.label}</span>
-                </div>
-              ))}
-            </div>
+
 
             {/* Description */}
             <p 
