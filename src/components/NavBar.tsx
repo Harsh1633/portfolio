@@ -26,8 +26,8 @@ const Navbar: React.FC = () => {
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-matrix-green/20">
-      <div className="flex items-center justify-between px-6 py-3">
+    <nav className="fixed top-0 left-0 w-full z-50 h-16 bg-background/80 backdrop-blur-sm border-b border-matrix-green/20">
+  <div className="h-full flex items-center justify-between px-10">
         {/* Logo */}
         <div className="text-2xl font-bold tracking-wider font-orbitron text-matrix-green matrix-text-glow">
           Harsh

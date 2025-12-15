@@ -45,11 +45,11 @@ const Hero: React.FC = () => {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left space-y-8">
             {/* Terminal-style greeting */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-secondary/50 backdrop-blur-sm animate-fade-in">
-              <Terminal className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-mono">system.init()</span>
-              <span className="w-2 h-4 bg-primary animate-matrix-pulse" />
-            </div>
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-secondary/50 backdrop-blur-sm animate-fade-in"> */}
+              {/* <Terminal className="w-4 h-4 text-primary" /> */}
+              {/* <span className="text-sm text-primary font-mono">system.init()</span> */}
+              {/* <span className="w-2 h-4 bg-primary animate-matrix-pulse" /> */}
+            {/* </div> */}
 
             {/* Main heading */}
             <div className="space-y-4" style={{ animationDelay: '0.2s' }}>
@@ -83,7 +83,7 @@ I enjoy working across the full app lifecycle — from structuring data models a
               className="flex justify-center lg:justify-start animate-fade-in"
               style={{ animationDelay: '0.6s' }}
             >
-              <Button
+              {/* <Button
                 variant="matrix"
                 size="lg"
                 onClick={handleDownload}
@@ -91,7 +91,7 @@ I enjoy working across the full app lifecycle — from structuring data models a
               >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-glitch" />
                 Download Resume
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -123,10 +123,10 @@ I enjoy working across the full app lifecycle — from structuring data models a
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: '1s' }}>
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: '1s' }}>
           <span className="text-xs text-muted-foreground font-mono">scroll.down()</span>
           <div className="w-px h-12 bg-gradient-to-b from-primary/50 to-transparent" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
