@@ -1,37 +1,24 @@
-import React, { useEffect, useState } from "react";
-import type { SectionType } from "@/pages/Index";
+import React, { useState } from "react";
 
-interface NavbarProps {
-  activeSection: SectionType;
-  setActiveSection: (section: SectionType) => void;
-}
+type SectionType = "about" | "work" | "creative" | "contact";
 
-const Navbar: React.FC<NavbarProps> = ({
-  activeSection,
-  setActiveSection,
-}) => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<SectionType>("about");
 
   const getRandomMatrixColor = () =>
-    Math.random() > 0.5 ? "0 100% 50%" : "220 100% 50%"; // Red / Blue
+    Math.random() > 0.5 ? "0 100% 50%" : "220 100% 50%";
 
   const handleSelect = (section: SectionType, el: HTMLElement) => {
     setActiveSection(section);
     el.style.setProperty("--matrix-red-blue", getRandomMatrixColor());
-  };
-
-  useEffect(() => {
-    const activeLink = document.querySelector(
-      `[data-section="${activeSection}"]`
-    ) as HTMLElement;
-
-    if (activeLink) {
-      activeLink.style.setProperty(
-        "--matrix-red-blue",
-        getRandomMatrixColor()
-      );
+    
+    // Scroll to section
+    const element = document.getElementById(section === "work" ? "projects" : section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }, [activeSection]);
+  };
 
   const linkClasses = (section: SectionType) =>
     `text-lg transition matrix-hover-glow cursor-pointer ${
@@ -39,11 +26,10 @@ const Navbar: React.FC<NavbarProps> = ({
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="flex items-center justify-between px-6 py-2">
-
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-matrix-green/20">
+      <div className="flex items-center justify-between px-6 py-3">
         {/* Logo */}
-        <div className="text-3xl font-bold tracking-wider">
+        <div className="text-2xl font-bold tracking-wider font-orbitron text-matrix-green matrix-text-glow">
           Harsh
         </div>
 
@@ -61,9 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 tabIndex={0}
                 role="button"
                 className={linkClasses(section)}
-                onClick={(e) =>
-                  handleSelect(section, e.currentTarget)
-                }
+                onClick={(e) => handleSelect(section, e.currentTarget)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
                     handleSelect(section, e.currentTarget);
@@ -81,9 +65,9 @@ const Navbar: React.FC<NavbarProps> = ({
           className="md:hidden flex flex-col gap-1 cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="w-6 h-[2px] bg-foreground"></span>
-          <span className="w-6 h-[2px] bg-foreground"></span>
-          <span className="w-6 h-[2px] bg-foreground"></span>
+          <span className="w-6 h-[2px] bg-matrix-green"></span>
+          <span className="w-6 h-[2px] bg-matrix-green"></span>
+          <span className="w-6 h-[2px] bg-matrix-green"></span>
         </div>
       </div>
     </nav>
