@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import MatrixRain from "@/components/MatrixRain";
 import Navbar from "@/components/NavBar";
+import ProjectsTimeline from "@/components/ProjectTimeline";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <MatrixRain />
       <Navbar />
       <Hero />
+      <ProjectsTimeline />
     </main>
   );
 };

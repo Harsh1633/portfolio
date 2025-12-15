@@ -45,10 +45,9 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:flex`}
         >
-          <a className="text-lg transition matrix-hover-glow">Home</a>
           <a className="text-lg transition matrix-hover-glow">About</a>
-          <a className="text-lg transition matrix-hover-glow">Projects</a>
-          <a className="text-lg transition matrix-hover-glow">Skills</a>
+          <a className="text-lg transition matrix-hover-glow">Work</a>
+          <a className="text-lg transition matrix-hover-glow">Creative</a>
           <a className="text-lg transition matrix-hover-glow">Contact</a>
         </div>
 
