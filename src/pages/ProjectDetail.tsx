@@ -112,7 +112,7 @@ const ProjectDetail: React.FC = () => {
           </div>
 
           {/* Description */}
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
               <span className="text-primary">//</span> About This Project
             </h2>
@@ -121,7 +121,7 @@ const ProjectDetail: React.FC = () => {
                 {project.fullDescription}
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Features */}
           <div className="mb-12">
@@ -148,7 +148,7 @@ const ProjectDetail: React.FC = () => {
           </div>
 
           {/* Terminal-style footer */}
-          <div className="bg-card/80 border border-border rounded-lg p-4 font-mono text-sm">
+          {/* <div className="bg-card/80 border border-border rounded-lg p-4 font-mono text-sm">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <span className="text-primary">$</span>
               <span>project.status</span>
@@ -156,7 +156,7 @@ const ProjectDetail: React.FC = () => {
             <div className="text-primary animate-pulse">
               → Active Development
             </div>
-          </div>
+          </div> */}
         </main>
       </div>
     </div>

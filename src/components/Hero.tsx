@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      id="hero"
+      id="about"
       className="relative min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden"
     >
       {/* Background gradient overlay */}

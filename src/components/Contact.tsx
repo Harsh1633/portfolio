@@ -16,17 +16,17 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Mail,
-      href: "mailto:your.email@gmail.com",
+      href: "mailto:harshchelimela123@gmail.com",
       label: "Email",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/in/harsh-chelimela-65029525b/",
       label: "LinkedIn",
     },
     {
       icon: Github,
-      href: "https://github.com/yourprofile",
+      href: "https://github.com/Harsh1633",
       label: "GitHub",
     },
   ];
@@ -72,7 +72,7 @@ const Contact = () => {
                 href="mailto:your.email@gmail.com" 
                 className="text-matrix-green hover:text-matrix-green-light transition-colors matrix-text-glow"
               >
-                your.email@gmail.com
+                harshchelimela123@gmail.com
               </a>
               .
             </p>

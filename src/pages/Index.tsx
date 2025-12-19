@@ -3,6 +3,7 @@ import MatrixRain from "@/components/MatrixRain";
 import Navbar from "@/components/NavBar";
 import ProjectsTimeline from "@/components/project_components/ProjectsTimeline";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -11,7 +12,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ProjectsTimeline />
+      {/* <Creatives/> */}
       <Contact />
+      <Footer/>
     </main>
   );
 };
