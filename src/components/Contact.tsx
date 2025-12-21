@@ -55,10 +55,10 @@ const Contact = () => {
             <div className="absolute -top-20 -left-20 w-40 h-40 bg-matrix-green/10 rounded-full blur-3xl" />
             
             {/* Terminal header */}
-            <div className="flex items-center gap-2 mb-6">
+            {/* <div className="flex items-center gap-2 mb-6">
               <Terminal className="w-5 h-5 text-matrix-green" />
               <span className="text-matrix-green font-mono text-sm">~/connect</span>
-            </div>
+            </div> */}
 
             <h2 className="text-4xl font-bold text-foreground mb-2 font-orbitron">
               Connect

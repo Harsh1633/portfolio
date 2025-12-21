@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-type SectionType = "about" | "work" | "creative" | "contact";
+type SectionType = "about" | "work" | "skillset" | "contact";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
             isOpen ? "block" : "hidden"
           } md:flex`}
         >
-          {(["about", "work", "creative", "contact"] as SectionType[]).map(
+          {(["about", "work", "skillset", "contact"] as SectionType[]).map(
             (section) => (
               <span
                 key={section}

@@ -11,7 +11,7 @@ const ProjectsTimeline: React.FC = () => {
           Projects
         </h2>
         <div className="w-24 h-1 bg-primary mb-6" />
-        <p className="text-muted-foreground text-lg max-w-md">
+        <p className="text-muted-foreground text-lg">
           What I'm actively building, improving, and exploring right now.
         </p>
       </div>

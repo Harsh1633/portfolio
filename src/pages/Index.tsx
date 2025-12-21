@@ -4,6 +4,7 @@ import Navbar from "@/components/NavBar";
 import ProjectsTimeline from "@/components/project_components/ProjectsTimeline";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Skillset from "@/components/Skillset";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ProjectsTimeline />
+      <Skillset/>
       {/* <Creatives/> */}
       <Contact />
       <Footer/>
