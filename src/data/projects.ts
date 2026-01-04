@@ -64,7 +64,7 @@ export const projects: Project[] = [
 },
 {
   id: "bond-bazaar",
-  date: "DEC 2025 – JUN 2025",
+  date: "JAN 2025 – JUN 2025",
   title: "Bond Bazaar",
   shortDescription: "Retail bond investment platform with compliant KYC, live RFQ trading, and portfolio insights.",
   fullDescription: `BondBazaar is a retail bond investment platform designed to simplify fixed-income investing while
@@ -98,26 +98,27 @@ Real-time buy and sell flows with accurate pricing and return calculations. A co
   playStoreLink: "https://play.google.com/store/apps/details?id=com.bond_bazaar&hl=en",
   appStoreLink: "https://apps.apple.com/in/app/bondbazaar/id6467102700"
 },
-
   {
-    id: "mobile-fitness-app",
-    date: "SEP 2025",
-    title: "Fitness Tracking App",
-    shortDescription: "Cross-platform mobile app for fitness enthusiasts.",
+    id: "spark-iris",
+    date: "OCT 2024 - DEC 2024",
+    title: "Spark IRIS",
+    shortDescription: "Next-Gen reporting platform for Spark PW delivering secure, real-time financial insights.",
     fullDescription: `A full-featured fitness tracking application built with Flutter. 
     Tracks workouts, nutrition, and progress with beautiful visualizations and gamification elements.
     
     Includes social features for competing with friends, custom workout builders, 
     and integration with popular fitness wearables.`,
     icon: "Smartphone",
-    technologies: ["Flutter", "Firebase", "HealthKit", "Google Fit API"],
+    technologies: ["Flutter", "Javascript", "GetX","Azure Devops"],
     features: [
-      "Workout tracking",
-      "Nutrition logging",
-      "Social challenges",
-      "Wearable integration"
+      "Role-Based Access Control for admins,RMs,clients and operations",
+      "Advanced Financial Dashboards to view operational metrics",
+      "Webview Integration with existing platformns like Sprint",
+      "Secure Authentication using Microsoft ADID Login and 2FA-enabled access",
+      "Real Time Data Sync of transcational and portfolio data",
+      "VAPT-Compliant security to prevent vulnerabilities"
     ],
-    playStoreLink: "https://play.google.com/store",
-    appStoreLink: "https://apps.apple.com",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.sparkpwm.iris&hl=en",
+    // appStoreLink: "https://apps.apple.com",
   },
 ];
