@@ -106,14 +106,27 @@ I enjoy working across the full app lifecycle — from structuring data models a
             <div className="absolute inset-0 -m-16 rounded-full border border-primary/10" />
             
             {/* Image container */}
-            <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/50 matrix-box-glow animate-float">
+            <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/50 matrix-box-glow animate-float ai-scan-overlay">
               <img
                 src={profileImg}
                 alt="Harsh Chelimela - Mobile Developer"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                className="w-full h-full object-cover transition-all duration-500 hover:scale-110 animate-hologram"
+              />
+              {/* Glitch duplicate layers */}
+              <img
+                src={profileImg}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-screen animate-glitch"
+                style={{ filter: 'hue-rotate(90deg)' }}
               />
               {/* Overlay scan effect */}
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10 pointer-events-none" />
+              {/* Corner brackets */}
+              <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary/70 animate-matrix-pulse" />
+              <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary/70 animate-matrix-pulse" />
+              <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary/70 animate-matrix-pulse" />
+              <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary/70 animate-matrix-pulse" />
             </div>
 
             {/* Decorative elements */}
