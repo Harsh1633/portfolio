@@ -35,7 +35,7 @@ const ProjectDetail: React.FC = () => {
         <header className="border-b border-border/50 backdrop-blur-sm bg-background/80">
           <div className="max-w-4xl mx-auto px-6 py-4">
             <Link
-              to="/"
+              to="/#work"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />

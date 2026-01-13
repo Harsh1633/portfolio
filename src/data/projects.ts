@@ -119,6 +119,6 @@ Real-time buy and sell flows with accurate pricing and return calculations. A co
       "VAPT-Compliant security to prevent vulnerabilities"
     ],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.sparkpwm.iris&hl=en",
-    // appStoreLink: "https://apps.apple.com",
+    appStoreLink: "https://apps.apple.com/us/app/iris-spark-capital-pwm/id6741318194",
   },
 ];
