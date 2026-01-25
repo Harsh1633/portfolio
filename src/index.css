@@ -1,208 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    /* Matrix Theme - Dark Cyberpunk */
-    --background: 120 10% 4%;
-    --foreground: 120 100% 65%;
-
-    --card: 120 10% 6%;
-    --card-foreground: 120 100% 65%;
-
-    --popover: 120 10% 6%;
-    --popover-foreground: 120 100% 65%;
-
-    --primary: 120 100% 50%;
-    --primary-foreground: 120 10% 4%;
-
-    --secondary: 120 30% 12%;
-    --secondary-foreground: 120 100% 65%;
-
-    --muted: 120 15% 15%;
-    --muted-foreground: 120 40% 50%;
-
-    --accent: 120 100% 40%;
-    --accent-foreground: 120 10% 4%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 120 50% 20%;
-    --input: 120 50% 20%;
-    --ring: 120 100% 50%;
-
-    
-    --radius: 0.5rem;
-
-    /* Matrix custom tokens */
-    --matrix-green: 120 100% 50%;
-    --matrix-green-glow: 120 100% 65%;
-    --matrix-dark: 120 10% 4%;
-    --matrix-darker: 120 15% 2%;
-    --matrix-gold: 45 100% 65%;
-    --matrix-red-blue: var(--matrix-red);
-    
-    /* Gradients */
-    --gradient-matrix: linear-gradient(135deg, hsl(120 100% 25%) 0%, hsl(120 100% 50%) 50%, hsl(120 80% 40%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(120 15% 8%) 0%, hsl(120 20% 6%) 50%, hsl(120 10% 4%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(120 100% 50% / 0.15) 0%, transparent 70%);
-    
-    /* Shadows */
-    --shadow-glow: 0 0 30px hsl(120 80% 50% / 0.4);
-    --shadow-glow-strong: 0 0 60px hsl(120 80% 50% / 0.6);
-    --shadow-card: 0 8px 32px hsl(120 80% 50% / 0.1);
-
-    --sidebar-background: 120 10% 6%;
-    --sidebar-foreground: 120 100% 65%;
-    --sidebar-primary: 120 100% 50%;
-    --sidebar-primary-foreground: 120 10% 4%;
-    --sidebar-accent: 120 30% 15%;
-    --sidebar-accent-foreground: 120 100% 65%;
-    --sidebar-border: 120 50% 20%;
-    --sidebar-ring: 120 100% 50%;
-  }
-
-  .dark {
-    --background: 120 10% 4%;
-    --foreground: 120 100% 65%;
-    --card: 120 10% 6%;
-    --card-foreground: 120 100% 65%;
-    --popover: 120 10% 6%;
-    --popover-foreground: 120 100% 65%;
-    --primary: 120 100% 50%;
-    --primary-foreground: 120 10% 4%;
-    --secondary: 120 30% 12%;
-    --secondary-foreground: 120 100% 65%;
-    --muted: 120 15% 15%;
-    --muted-foreground: 120 40% 50%;
-    --accent: 120 100% 40%;
-    --accent-foreground: 120 10% 4%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 120 50% 20%;
-    --input: 120 50% 20%;
-    --ring: 120 100% 50%;
-    --sidebar-background: 120 10% 6%;
-    --sidebar-foreground: 120 100% 65%;
-    --sidebar-primary: 120 100% 50%;
-    --sidebar-primary-foreground: 120 10% 4%;
-    --sidebar-accent: 120 30% 15%;
-    --sidebar-accent-foreground: 120 100% 65%;
-    --sidebar-border: 120 50% 20%;
-    --sidebar-ring: 120 100% 50%;
-  }
+@theme {
+  /* Matrix Theme - Dark Cyberpunk Colors */
+  --color-background: hsl(120 10% 4%);
+  --color-foreground: hsl(120 100% 65%);
+  
+  --color-card: hsl(120 10% 6%);
+  --color-card-foreground: hsl(120 100% 65%);
+  
+  --color-popover: hsl(120 10% 6%);
+  --color-popover-foreground: hsl(120 100% 65%);
+  
+  --color-primary: hsl(120 100% 50%);
+  --color-primary-foreground: hsl(120 10% 4%);
+  
+  --color-secondary: hsl(120 30% 12%);
+  --color-secondary-foreground: hsl(120 100% 65%);
+  
+  --color-muted: hsl(120 15% 15%);
+  --color-muted-foreground: hsl(120 40% 50%);
+  
+  --color-accent: hsl(120 100% 40%);
+  --color-accent-foreground: hsl(120 10% 4%);
+  
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  
+  --color-border: hsl(120 50% 20%);
+  --color-input: hsl(120 50% 20%);
+  --color-ring: hsl(120 100% 50%);
+  
+  /* Matrix custom colors */
+  --color-matrix-green: hsl(120 100% 50%);
+  --color-matrix-green-glow: hsl(120 100% 65%);
+  --color-matrix-dark: hsl(120 10% 4%);
+  --color-matrix-darker: hsl(120 15% 2%);
+  --color-matrix-gold: hsl(45 100% 65%);
+  
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
 }
 
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-mono;
-    font-family: 'Share Tech Mono', monospace;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
-  }
+* {
+  border-color: hsl(120 50% 20%);
 }
 
-@layer components {
-  .matrix-text-glow {
-    text-shadow: 
-      0 0 10px hsl(var(--matrix-green)),
-      0 0 20px hsl(var(--matrix-green)),
-      0 0 60px hsl(var(--matrix-green) / 0.5);
-  }
-
-  .matrix-box-glow {
-    box-shadow: var(--shadow-glow);
-  }
-
-  .matrix-box-glow-strong {
-    box-shadow: var(--shadow-glow-strong);
-  }
+body {
+  background-color: hsl(120 10% 4%);
+  color: hsl(120 100% 65%);
+  font-family: 'Share Tech Mono', monospace;
 }
 
-@layer utilities {
-  /* Random Matrix-style red/blue glow on hover */
- .matrix-hover-glow:hover {
-  color: hsl(var(--matrix-red-blue) / 1);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Matrix custom utilities */
+.matrix-text-glow {
+  text-shadow: 
+    0 0 10px hsl(120 100% 50%),
+    0 0 20px hsl(120 100% 50%),
+    0 0 60px hsl(120 100% 50% / 0.5);
+}
+
+.matrix-box-glow {
+  box-shadow: 0 0 30px hsl(120 80% 50% / 0.4);
+}
+
+.matrix-box-glow-strong {
+  box-shadow: 0 0 60px hsl(120 80% 50% / 0.6);
+}
+
+.matrix-hover-glow:hover {
+  color: hsl(120 100% 50%);
   text-shadow:
-    0 0 5px hsl(var(--matrix-red-blue) / 0.8),
-    0 0 10px hsl(var(--matrix-red-blue) / 0.6),
-    0 0 20px hsl(var(--matrix-red-blue) / 0.4);
+    0 0 5px hsl(120 100% 50% / 0.8),
+    0 0 10px hsl(120 100% 50% / 0.6),
+    0 0 20px hsl(120 100% 50% / 0.4);
   transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
+/* Animations */
+.animate-matrix-pulse {
+  animation: matrix-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
 
-@layer utilities {
-  .animate-matrix-pulse {
-    animation: matrix-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
 
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
+.animate-scan-line {
+  animation: scan-line 8s linear infinite;
+}
 
-  .animate-glow-pulse {
-    animation: glow-pulse 3s ease-in-out infinite;
-  }
+.animate-glitch {
+  animation: glitch 3s infinite;
+}
 
-  .animate-scan-line {
-    animation: scan-line 8s linear infinite;
-  }
+.animate-hologram {
+  animation: hologram 4s ease-in-out infinite;
+}
 
-  .animate-glitch {
-    animation: glitch 3s infinite;
-  }
+.ai-scan-overlay {
+  position: relative;
+  overflow: hidden;
+}
 
-  .animate-hologram {
-    animation: hologram 4s ease-in-out infinite;
-  }
+.ai-scan-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    hsl(120 100% 50% / 0.03) 50%,
+    transparent 100%
+  );
+  animation: ai-scan 2s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
 
-  .ai-scan-overlay {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .ai-scan-overlay::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      transparent 0%,
-      hsl(120 100% 50% / 0.03) 50%,
-      transparent 100%
-    );
-    animation: ai-scan 2s linear infinite;
-    pointer-events: none;
-    z-index: 10;
-  }
-
-  .ai-scan-overlay::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      hsl(120 100% 50% / 0.03) 2px,
-      hsl(120 100% 50% / 0.03) 4px
-    );
-    pointer-events: none;
-    z-index: 10;
-  }
+.ai-scan-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    hsl(120 100% 50% / 0.03) 2px,
+    hsl(120 100% 50% / 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 10;
 }
 
 @keyframes matrix-pulse {
