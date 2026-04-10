@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               Turning ideas into reality, one commit at a time.
             </p>
             <p className="text-base md:text-lg text-muted-foreground mx-auto lg:mx-0 font-mono animate-fade-in"
-              style={{ animationDelay: '0.5s' }}>IT Professional with 1.7 years of hands-on experience building responsive, scalable mobile applications. I focus on creating smooth user journeys by combining clean architecture, thoughtful UI, and reliable API integrations.
+              style={{ animationDelay: '0.5s' }}>IT Professional with 2 years of hands-on experience building responsive, scalable mobile applications. I focus on creating smooth user journeys by combining clean architecture, thoughtful UI, and reliable API integrations.
 
 I enjoy working across the full app lifecycle — from structuring data models and managing state to optimizing performance and handling edge cases. Curious by nature, I’m constantly learning and refining my approach, because great apps shouldn’t just work well — they should feel clear, confident, and intuitive to use.</p>
 

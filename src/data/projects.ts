@@ -1,9 +1,12 @@
 import { Bot, Code2, Smartphone, ShoppingCart, Palette, Layers } from "lucide-react";
+import bond_bazaar from "../assets/images/bond_bazaar.webp";
+import sahayak from "../assets/images/sahayak.webp";
+import spark_iris from "../assets/images/spark_iris.webp";
 
 export interface Project {
   id: string;
-  date: string;
   title: string;
+  image: string;
   shortDescription: string;
   fullDescription: string;
   icon: keyof typeof iconMap;
@@ -28,7 +31,7 @@ export const iconMap = {
 export const projects: Project[] = [
   {
   id: "sbfc-saahayak",
-  date: "JUL 2025 – Present",
+  image: sahayak,
   title: "SBFC Saahayak",
   shortDescription: "Compliance-first field onboarding app streamlining the LOS journey.",
   fullDescription: `SBFC Saahayak is a secure field-force mobile application designed to digitize and streamline the 
@@ -64,8 +67,8 @@ export const projects: Project[] = [
 },
 {
   id: "bond-bazaar",
-  date: "JAN 2025 – JUN 2025",
   title: "Bond Bazaar",
+  image: bond_bazaar,
   shortDescription: "Retail bond investment platform with compliant KYC, live RFQ trading, and portfolio insights.",
   fullDescription: `BondBazaar is a retail bond investment platform designed to simplify fixed-income investing while
    adhering to SEBI and RBI compliance standards. A structured 10-step KYC onboarding flow was implemented, covering OTP 
@@ -100,8 +103,8 @@ Real-time buy and sell flows with accurate pricing and return calculations. A co
 },
   {
     id: "spark-iris",
-    date: "OCT 2024 - DEC 2024",
     title: "Spark IRIS",
+    image: spark_iris,
     shortDescription: "Next-Gen reporting platform for Spark PW delivering secure, real-time financial insights.",
     fullDescription: `A full-featured fitness tracking application built with Flutter. 
     Tracks workouts, nutrition, and progress with beautiful visualizations and gamification elements.

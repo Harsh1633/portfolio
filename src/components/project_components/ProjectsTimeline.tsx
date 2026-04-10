@@ -55,9 +55,9 @@ const ProjectsTimeline: React.FC = () => {
                     </div>
 
                     {/* Date */}
-                    <span className="text-xs font-mono text-muted-foreground tracking-wider">
+                    {/* <span className="text-xs font-mono text-muted-foreground tracking-wider">
                       {project.date}
-                    </span>
+                    </span> */}
 
                     {/* Title */}
                     <h3 className="text-xl font-bold text-foreground mt-2 group-hover:text-primary transition-colors">

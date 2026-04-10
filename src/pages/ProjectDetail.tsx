@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Github, Smartphone } from "lucide-react";
 import { projects, iconMap } from "@/data/projects";
@@ -8,6 +8,11 @@ import MatrixRain from "@/components/MatrixRain";
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const project = projects.find((p) => p.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   if (!project) {
     return (
@@ -49,18 +54,20 @@ const ProjectDetail: React.FC = () => {
           {/* Project Header */}
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 rounded-xl bg-card border-2 border-primary flex items-center justify-center animate-glow-pulse">
-                <IconComponent className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 rounded-xl bg-card border-2 border-primary flex items-center justify-center animate-glow-pulse overflow-hidden">
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
               </div>
               <div>
-                <span className="text-sm font-mono text-muted-foreground">
-                  {project.date}
-                </span>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground matrix-text-glow">
                   {project.title}
                 </h1>
               </div>
             </div>
+            
 
             {/* Technologies */}
             <div className="flex flex-wrap gap-2 mb-8">
